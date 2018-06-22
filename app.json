@@ -1,0 +1,12 @@
+{
+  "name": "TelegramBot",
+  "description": "Telegram bot on ASP.NET Core",
+  "repository": "https://github.com/artem-abdrashitov/TelegramBot",
+  "keywords": ["aspnet", "core","telegram","bot"],
+  "stack": "heroku-16",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jincod/dotnetcore-buildpack"
+    }
+  ]
+}

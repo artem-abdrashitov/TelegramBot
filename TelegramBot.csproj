@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\Alerts\**" />
+    <Compile Remove="Commands\Notify\**" />
+    <Compile Remove="Commands\PercentChange\**" />
+    <Compile Remove="Commands\TimeToCompare\**" />
+    <Compile Remove="Commands\UnconfirmedTransactions\**" />
+    <Compile Remove="Commands\Webs\**" />
+    <Content Remove="Commands\Alerts\**" />
+    <Content Remove="Commands\Notify\**" />
+    <Content Remove="Commands\PercentChange\**" />
+    <Content Remove="Commands\TimeToCompare\**" />
+    <Content Remove="Commands\UnconfirmedTransactions\**" />
+    <Content Remove="Commands\Webs\**" />
+    <EmbeddedResource Remove="Commands\Alerts\**" />
+    <EmbeddedResource Remove="Commands\Notify\**" />
+    <EmbeddedResource Remove="Commands\PercentChange\**" />
+    <EmbeddedResource Remove="Commands\TimeToCompare\**" />
+    <EmbeddedResource Remove="Commands\UnconfirmedTransactions\**" />
+    <EmbeddedResource Remove="Commands\Webs\**" />
+    <None Remove="Commands\Alerts\**" />
+    <None Remove="Commands\Notify\**" />
+    <None Remove="Commands\PercentChange\**" />
+    <None Remove="Commands\TimeToCompare\**" />
+    <None Remove="Commands\UnconfirmedTransactions\**" />
+    <None Remove="Commands\Webs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="BackgroundTasks\BittriexTask.cs" />
+    <Compile Remove="Commands\GetSettings\GetAllPercentCommand.cs" />
+    <Compile Remove="Commands\GetSettings\GetTimeToCompareCommand.cs" />
+    <Compile Remove="Models\Notice.cs" />
+    <Compile Remove="Models\Notification.cs" />
+    <Compile Remove="Models\Report.cs" />
+    <Compile Remove="Services\CurrencyService.cs" />
+    <Compile Remove="Services\Stores\NoticeStore.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.4.4" />
+    <PackageReference Include="Telegram.Bot" Version="13.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

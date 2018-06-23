@@ -1,5 +1,5 @@
-# Telegram bot on ASP.NET Core
-Telegram bot for receiving up-to-date information about crypto-currencies from exchanges: Poloniex and CoinMarketCap.
+# Telegram bot
+Receives up-to-date information about crypto-currencies from exchanges: Poloniex and CoinMarketCap.
 
 ## Usage 
 To get information about the main currencies, use `/main` in the chat.
